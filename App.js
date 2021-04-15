@@ -2,14 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {Ionicons} from '@expo/vector-icons';
+import Home from './screen/home'
+// import Nagivator from './route/homeStack'
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Ionicons name="remove" />
-      <StatusBar style="auto" />
-    </View>
+    // <Nagivator />
+    // <View style={styles.container}>
+    <Home />
+    // </View>
   );
 }
 
