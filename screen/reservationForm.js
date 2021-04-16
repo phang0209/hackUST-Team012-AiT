@@ -1,11 +1,17 @@
 import React from 'react';
 import {View, Text, StyleSheet, Button} from 'react-native';
 import { TextInput } from 'react-native-gesture-handler';
+import { StackActions } from 'react-navigation';
 
-const ReservationForm = () => {
+const ReservationForm = ({navigation}) => {
+
+    const back = () => {
+        navigation.dispatch(StackActions.pop(1));
+    };
+
     return(
         <View style={styles.container}>
-            <Text h1 style={styles.name}>Ko Ming</Text>
+            <Text h1 style={styles.name}>{navigation.getParam('name')}</Text>
             <TextInput style={styles.smallInputBox}
                 placeholder="Name:"
             />
@@ -25,7 +31,7 @@ const ReservationForm = () => {
                 placeholder="Remark:"
             />
             <View style={styles.butn}>
-                <Button title="Submit" color="yellow"/>
+                <Button title="Submit" color="yellow" onPress={back}/>
             </View>
         </View>
     );

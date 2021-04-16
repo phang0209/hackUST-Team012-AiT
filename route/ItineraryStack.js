@@ -1,15 +1,15 @@
 import { createStackNavigator } from 'react-navigation-stack';
-import SearchPage from '../screen/searchPage';
-import ReservationForm from '../screen/reservationForm';
+import ItineraryList from '../screen/itineraryList';
 import Header from '../component/header';
+import ReservationForm from '../screen/reservationForm';
 import React from 'react';
 
 const screens = {
-    SearchPage: {
-        screen: SearchPage,
+    ItineraryList: {
+        screen: ItineraryList,
         navigationOptions: ({navigation})=>{
             return {
-                headerTitle: () => <Header navigation={navigation} title="Search"/>,
+                headerTitle: () => <Header navigation={navigation} title="Itinerary"/>,
             }
         }
     },
@@ -23,7 +23,7 @@ const screens = {
 
 
 
-const HomeStack = createStackNavigator(screens,{
+const ItineraryStack = createStackNavigator(screens,{
     defaultNavigationOptions: {
         headerTintColor: '#000',
         headerStyle: {
@@ -33,4 +33,4 @@ const HomeStack = createStackNavigator(screens,{
     }
 });
 
-export default HomeStack;
+export default ItineraryStack;

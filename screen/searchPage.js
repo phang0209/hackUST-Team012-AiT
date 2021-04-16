@@ -23,7 +23,7 @@ const SearchPage = ({ navigation }) => {
 
     const book = () => {
         setModalOpen(false);
-        navigation.navigate('ReservationForm');
+        navigation.navigate('ReservationForm', currentItem);
     }   
 
     return(
@@ -51,7 +51,7 @@ const SearchPage = ({ navigation }) => {
                         <Text style={styles.details}>{"Address: "}{currentItem.address}</Text>
                         <Text style={styles.details}>{"Tel: "}{currentItem.tel}</Text>
                         <Text style={styles.details, {margin: 20, marginVertical: 10, marginBottom: 50}}>{"Opening Hours: \nToday\t11:00-23:00\nMon-Tue\t11:00-23:00\nWed\tclose\nThu-Sun\t11:00-23:00"}</Text>
-                        <TouchableOpacity onPress={() => {console.log("hi");}}>
+                        <TouchableOpacity onPress={() => setModalOpen(false)}>
                             <View style={{backgroundColor: "white", height: 50, width: 350, alignSelf: 'center', borderRadius: 20,}}>
                                 <Text style={{fontSize: 20, textAlign: 'center', margin: 10, color: '#000'}}>Add to Itinerary</Text>
                             </View>

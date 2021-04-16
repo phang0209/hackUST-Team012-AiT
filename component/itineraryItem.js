@@ -7,7 +7,7 @@ const ItItem = (props) => {
     return(
         <View style={styles.container}>
             <View>
-                <Text h1 style={styles.locationTitle}>{props.iti.dest}</Text>
+                <Text h1 style={styles.locationTitle}>{props.iti.name}</Text>
                 <Text style={styles.details}>Time: {props.iti.time}</Text>
                 <Text style={styles.details}>Date: {props.iti.date}</Text>
                 <Text style={styles.details}>Reservation: {(props.iti.reserve)?<FontAwesome name="check" size={15}/>:<FontAwesome name="remove" size={15}/>}</Text>
