@@ -1,12 +1,12 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-// import Header from '../component/Header';
+import SearchBar from '../component/searchBar'
 
 const Home = () => {
   return (
     <View style={styles.container}>
       {/* <Header style={styles.header} title='Rescation' HeaderTextStyle={styles.HeaderTextStyle}/> */}
-      {/* <SearchBar /> */}
+      <SearchBar />
       <View style={{flex:1}}>
         <View style={styles.horiRetaBanner}>
           <Text>Recent Itinerary</Text>
