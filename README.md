@@ -20,5 +20,5 @@ Notice that this app is a prototype and part of the functions are not fully impl
   - It is supposed to run this app based on an Account System, which facilitate identification and recording
 
 ### Prototype on Figma
-An UI prototype was created before the implementation, which can be viewed on [https://www.figma.com/proto/mCnSWZmkH18eIeDGxQo3N5/Rescation?node-id=15%3A3&scaling=scale-down&page-id=0%3A1](https://www.figma.com/proto/mCnSWZmkH18eIeDGxQo3N5/Rescation?node-id=15%3A3&scaling=scale-down&page-id=0%3A1)
+An UI prototype was created before the implementation, which can be viewed on [this page](https://www.figma.com/proto/mCnSWZmkH18eIeDGxQo3N5/Rescation?node-id=15%3A3&scaling=scale-down&page-id=0%3A1)
   
