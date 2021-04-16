@@ -1,6 +1,6 @@
 # hackUST-Team012-AiT
 ## Rescation
-This is the prototype of the app Rescation proposed by Team012 AiT. It aims to tackle the issues raised in Theme 2 (Smart Travel Technology). The repository includes the frontend implementation.  
+This is the prototype of the app **Rescation** proposed by Team012 AiT. It aims to tackle the issues raised in Theme 2 (Smart Travel Technology). The repository includes the frontend implementation.  
 
 ### Viewing Prototype
 This project is created using the React Native framework with `expo cli`. Therefore, to view the code, please download download the lastest versions of `node.js`, `react-native` and `expo-cli`. Open the project folder and run `npm install`. Then run `npm start`. A page will be opened on the browser afterwards. Please choose your desired method to view. It is suggested to use an Android emulator from the Android Studio. In that case, turn on the emulator and choose `Run on Android device/emulator`. It is supposed that the app can be viewed at this point.  
